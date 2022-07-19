@@ -1,0 +1,106 @@
+# 배포환경
+spring:
+  profiles:
+    active: local
+
+  security:
+    user:
+      name: guest
+      password: guest
+
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+
+  mail:
+    host: email-smtp.ap-northeast-2.amazonaws.com
+    port: 587
+    username:
+    password:
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 5000
+          starttls:
+            enable: true
+
+#  datasource:
+#    hikari:
+#      max-lifetime: 26000
+
+mybatis:
+  mapper-locations: db/mybatis/sql/*/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+
+custom:
+  reply-queue: queue.macro.reply  # 응답 큐
+
+---
+##### 로컬 #####
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+
+  sql:
+    init:
+      schema-locations: classpath*:db/h2/init.sql
+      mode: always
+
+#  db:
+#    datasource:
+#      jdbc-url:
+#      username:
+#      password:
+#      driver-class-name: com.mysql.jdbc.Driver
+
+# 파일 업로드 경로
+custom:
+  file:
+    path: C:/tmp/
+
+---
+##### 개발 #####
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+  db:
+    datasource:
+      jdbc-url:
+      username:
+      password:
+      driver-class-name: com.mysql.jdbc.Driver
+
+# 파일 업로드 경로
+custom:
+  file:
+    path: /home/rp/upload
+
+---
+##### 상용 #####
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.jdbc.Driver

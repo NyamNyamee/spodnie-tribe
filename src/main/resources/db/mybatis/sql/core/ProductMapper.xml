@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.poland.st.dao.ProductDAO">
+    <select id="getProducts" parameterType="java.lang.String" resultType="com.poland.st.dto.ProductDTO">
+        SELECT
+            *
+        FROM
+            ST_PRODUCT_INFO AS SPI
+        WHERE
+            1 = 1;
+    </select>
+
+    <select id="selectMacroLastSeqNum" parameterType="java.util.HashMap" resultType="String">
+        SELECT
+            IFNULL(MAX(CAST(SEQ_NUM AS UNSIGNED)), 0)
+        FROM
+            MACRO_INFO
+        WHERE
+            1 = 1
+            AND CASE_MGMT_NUM = #{caseMgmtNum}
+            AND MACRO_TYP = #{macroTyp}
+    </select>
+
+    <insert id="insertMacroRequestInfo" parameterType="hashmap">
+        INSERT INTO
+            MACRO_INFO (CASE_MGMT_NUM, MACRO_ID, SEQ_NUM, MACRO_PRGSS_ST, MACRO_TYP, MACRO_REQ_DTMS)
+        VALUES
+            (#{caseMgmtNum}, #{macroId}, #{seqNum}, #{macroPrgssSt}, #{macroTyp}, DATE_FORMAT(NOW(), '%Y%m%d%H%i%s'))
+    </insert>
+
+    <select id="selectMacroRequestData" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        <choose>
+            <!-- 등기부등본 열람 -->
+            <when test="macroTyp.equals('01')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 토지대장 열람 -->
+            <when test="macroTyp.equals('02')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 토지이용계획원 열람 -->
+            <when test="macroTyp.equals('03')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 건축물대장 열람 -->
+            <when test="macroTyp.equals('04')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 공시지가 열람 -->
+            <when test="macroTyp.equals('05')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 매수인 가족관계증명서 발급 -->
+            <when test="macroTyp.equals('06')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 세금 신고 -->
+            <when test="macroTyp.equals('07')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 수입인지 납부 -->
+            <when test="macroTyp.equals('08')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 채권 매입 -->
+            <when test="macroTyp.equals('09')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 등기신청서 작성 -->
+            <when test="macroTyp.equals('10')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 세금 신고(경정) -->
+            <when test="macroTyp.equals('11')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 등기신청서 작성(경정) -->
+            <when test="macroTyp.equals('12')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 완료 등기부등본 발급 -->
+            <when test="macroTyp.equals('13')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+            <!-- 등기필정보 발급 -->
+            <when test="macroTyp.equals('14')">
+                SELECT
+                    EST_UNQ_NUM AS estUnqNum,
+                    EST_ADDR AS estAddr,
+                    EST_ADDR_DTL AS estAddrDtl,
+                    CI.CUST_NM AS custNm
+                FROM
+                    CASE_BASIC_INFO AS CBI
+                    LEFT JOIN CUST_INFO AS CI ON CBI.CASE_MGMT_NUM = CI.CASE_MGMT_NUM
+                WHERE
+                    1 = 1
+                    AND CBI.CASE_MGMT_NUM = #{caseMgmtNum}
+                    AND CI.CUST_TYP = '1'
+                    AND CI.SEQ_NUM = '1'
+            </when>
+        </choose>
+    </select>
+
+    <update id="updateMacroInfo" parameterType="java.util.HashMap">
+        UPDATE
+            MACRO_INFO
+        SET
+            MACRO_ID = #{macroId},
+            MACRO_PRGSS_ST = #{macroPrgssSt},
+            MACRO_RSLT = #{macroRslt},
+            MACRO_EROR_MSG = #{macroErorMsg},
+            MACRO_PROC_DTMS = #{macroProcDtms}
+        WHERE
+            1 = 1
+            AND CASE_MGMT_NUM = #{caseMgmtNum}
+            AND SEQ_NUM = #{seqNum}
+    </update>
+
+    <select id="selectMacroListById" parameterType="string" resultType="java.util.HashMap">
+        SELECT
+            *
+        FROM
+            MACRO_INFO
+        WHERE
+            1 = 1
+            AND CASE_MGMT_NUM = #{caseMgmtNum}
+    </select>
+
+    <select id="selectDocsForMacro" parameterType="java.util.HashMap" resultType="java.util.HashMap">
+        SELECT
+            DISTINCT DOC_TYP
+        FROM
+            DOC_INFO
+        WHERE
+            1 = 1
+            AND CASE_MGMT_NUM = #{caseMgmtNum}
+            AND MACRO_USE ='Y'
+            <choose>
+                <!-- 세금 신고, 세금 신고(경정) -->
+                <when test="macroTyp.equals('07') || macroTyp.equals('11')">
+                    AND
+                    (DOC_TYP = 'BA001' OR DOC_TYP = 'MF010'
+                    OR DOC_TYP = 'AG001' OR DOC_TYP = 'MF012'
+                    OR DOC_TYP = 'BU002' OR DOC_TYP = 'MF001'
+                    OR DOC_TYP = 'BU003' OR DOC_TYP = 'MF003'
+                    OR DOC_TYP = 'BU010' OR DOC_TYP = 'MF004')
+                </when>
+                <!-- 등기신청서 작성, 등기신청서 작성(경정) -->
+                <when test="macroTyp.equals('10') || macroTyp.equals('12')">
+                    AND (DOC_TYP = 'BA001' OR DOC_TYP = 'MF010'
+                    OR DOC_TYP = 'ST001'
+                    <!--
+                    OR DOC_TYP = 'BA003'
+                    OR DOC_TYP = 'BA004'
+                    -->
+                    )
+                </when>
+                <!-- 기타일때 빈 리스트를 리턴해야 함 -->
+                <otherwise>
+                    AND MACRO_USE ='N'
+                </otherwise>
+            </choose>
+    </select>
+</mapper>
