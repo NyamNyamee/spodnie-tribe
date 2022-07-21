@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="ko">
+<th:block th:replace="view/layout/layout :: layout(~{this :: content}, ~{this :: title})">
+    <title th:fragment="title">spodnie-tribe</title>
+    <main th:fragment="content">
+        <div class="st-div-content-container">
+            <div style="height: 670px; text-align: center;">
+                Email: wxxs_j@gamil.com
+                <br>
+                Tel: 010.5555.6666
+            </div>
+        </div>
+    </main>
+</th:block>
+</html>
