@@ -14,6 +14,7 @@
 }
 
 .st-span-header-left {
+    width: 100px;
 }
 
 .st-span-hamburger-bars,
@@ -67,7 +68,6 @@
     transition: transform 0.3s 0.3s;
 }
 
-/* 메뉴 오픈시 */
 .nav-menu-open {
     transform: translateX(0);
 }
@@ -155,6 +155,7 @@
 }
 
 .st-span-header-right {
+    width: 100px;
 }
 
 /* 메인(content) */

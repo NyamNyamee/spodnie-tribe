@@ -7580,3 +7580,177 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [view/
 [2022-07-21 21:30:18.615] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
 [2022-07-21 21:30:18.620] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
 [2022-07-21 21:30:18.624] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:47:48.272] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2022-07-21 21:47:48.536] WARN  o.s.b.f.s.DisposableBeanAdapter:222 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[2022-07-21 21:47:48.539] INFO  o.s.s.quartz.SchedulerFactoryBean:847 - Shutting down Quartz Scheduler
+[2022-07-21 21:47:48.539] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2022-07-21 21:47:48.539] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2022-07-21 21:47:48.540] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2022-07-21 21:47:48.552] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+[2022-07-21 21:47:48.559] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+[2022-07-21 21:47:53.255] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_292 on InWooui-MacBookAir.local with PID 7163 (/Users/invu/Desktop/invu/dev/repository/intellij-workspace/spodnie-tribe/build/classes/java/main started by invu in /Users/invu/Desktop/invu/dev/repository/intellij-workspace/spodnie-tribe)
+[2022-07-21 21:47:53.259] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-21 21:47:53.260] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-21 21:47:53.261] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-21 21:47:53.329] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-21 21:47:53.332] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-21 21:47:54.689] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-21 21:47:54.696] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-21 21:47:54.696] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-21 21:47:54.697] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-21 21:47:54.753] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-21 21:47:54.754] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1421 ms
+[2022-07-21 21:47:54.787] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-21 21:47:54.927] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-21 21:47:54.947] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-21 21:47:55.513] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f65a77, org.springframework.security.web.context.SecurityContextPersistenceFilter@ac5a114, org.springframework.security.web.header.HeaderWriterFilter@384cd376, org.springframework.security.web.authentication.logout.LogoutFilter@50d56b18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2af10b7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d5ddaf7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57c0a12c, org.springframework.security.web.session.SessionManagementFilter@4c2f3093, org.springframework.security.web.access.ExceptionTranslationFilter@1ae8dc24, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17bfc386]
+[2022-07-21 21:47:56.108] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-21 21:47:56.123] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-21 21:47:56.124] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-21 21:47:56.124] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-21 21:47:56.125] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-21 21:47:56.126] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-21 21:47:56.126] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-21 21:47:56.126] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@382bf60f
+[2022-07-21 21:47:56.173] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-21 21:47:56.268] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-21 21:47:56.289] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-21 21:47:56.292] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-21 21:47:56.293] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-21 21:47:56.306] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.436 seconds (JVM running for 4.326)
+[2022-07-21 21:47:56.554] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-21 21:47:56.555] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-21 21:47:56.558] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 2 ms
+[2022-07-21 21:48:01.046] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:48:01.070] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:48:01.086] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:48:02.670] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:48:02.675] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:48:02.678] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:48:03.476] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:48:03.478] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:48:03.480] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:48:04.688] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:48:04.691] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:48:04.697] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:53:50.096] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2022-07-21 21:53:50.352] WARN  o.s.b.f.s.DisposableBeanAdapter:222 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[2022-07-21 21:53:50.352] INFO  o.s.s.quartz.SchedulerFactoryBean:847 - Shutting down Quartz Scheduler
+[2022-07-21 21:53:50.352] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2022-07-21 21:53:50.352] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2022-07-21 21:53:50.353] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2022-07-21 21:53:50.364] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+[2022-07-21 21:53:50.374] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+[2022-07-21 21:53:53.559] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_292 on InWooui-MacBookAir.local with PID 7245 (/Users/invu/Desktop/invu/dev/repository/intellij-workspace/spodnie-tribe/build/classes/java/main started by invu in /Users/invu/Desktop/invu/dev/repository/intellij-workspace/spodnie-tribe)
+[2022-07-21 21:53:53.561] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-21 21:53:53.562] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-21 21:53:53.565] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-21 21:53:53.618] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-21 21:53:53.618] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-21 21:53:54.927] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-21 21:53:54.932] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-21 21:53:54.933] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-21 21:53:54.933] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-21 21:53:54.975] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-21 21:53:54.976] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1357 ms
+[2022-07-21 21:53:55.006] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-21 21:53:55.127] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-21 21:53:55.146] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-21 21:53:55.614] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10c0bc97, org.springframework.security.web.context.SecurityContextPersistenceFilter@29f519d9, org.springframework.security.web.header.HeaderWriterFilter@7ff00f16, org.springframework.security.web.authentication.logout.LogoutFilter@2189ed29, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c28bd45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a97f3fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42dbb662, org.springframework.security.web.session.SessionManagementFilter@2af10b7b, org.springframework.security.web.access.ExceptionTranslationFilter@384cd376, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@744366ee]
+[2022-07-21 21:53:56.078] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-21 21:53:56.083] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-21 21:53:56.084] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-21 21:53:56.084] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-21 21:53:56.085] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-21 21:53:56.085] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-21 21:53:56.085] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-21 21:53:56.085] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6d4f541f
+[2022-07-21 21:53:56.128] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-21 21:53:56.214] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-21 21:53:56.228] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-21 21:53:56.230] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-21 21:53:56.231] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-21 21:53:56.242] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.04 seconds (JVM running for 3.84)
+[2022-07-21 21:53:58.088] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-21 21:53:58.088] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-21 21:53:58.090] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 2 ms
+[2022-07-21 21:54:01.526] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:54:01.550] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:54:01.575] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:54:03.301] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:54:03.303] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:54:03.307] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:54:05.367] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:54:05.369] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:54:05.371] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:54:10.536] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:54:10.542] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:54:10.552] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:54:17.929] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:54:17.932] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:54:17.951] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-21 21:56:23.048] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2022-07-21 21:56:23.306] WARN  o.s.b.f.s.DisposableBeanAdapter:222 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-200]
+[2022-07-21 21:56:23.307] INFO  o.s.s.quartz.SchedulerFactoryBean:847 - Shutting down Quartz Scheduler
+[2022-07-21 21:56:23.307] INFO  org.quartz.core.QuartzScheduler:666 - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2022-07-21 21:56:23.307] INFO  org.quartz.core.QuartzScheduler:585 - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2022-07-21 21:56:23.308] INFO  org.quartz.core.QuartzScheduler:740 - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2022-07-21 21:56:23.315] INFO  com.zaxxer.hikari.HikariDataSource:350 - HikariPool-1 - Shutdown initiated...
+[2022-07-21 21:56:23.327] INFO  com.zaxxer.hikari.HikariDataSource:352 - HikariPool-1 - Shutdown completed.
+[2022-07-21 21:56:26.670] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_292 on InWooui-MacBookAir.local with PID 7306 (/Users/invu/Desktop/invu/dev/repository/intellij-workspace/spodnie-tribe/build/classes/java/main started by invu in /Users/invu/Desktop/invu/dev/repository/intellij-workspace/spodnie-tribe)
+[2022-07-21 21:56:26.672] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-21 21:56:26.673] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-21 21:56:26.678] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-21 21:56:26.723] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-21 21:56:26.723] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-21 21:56:28.054] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-21 21:56:28.060] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-21 21:56:28.061] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-21 21:56:28.061] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-21 21:56:28.101] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-21 21:56:28.101] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1377 ms
+[2022-07-21 21:56:28.131] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-21 21:56:28.261] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-21 21:56:28.283] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-21 21:56:28.730] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6f6bdfca, org.springframework.security.web.context.SecurityContextPersistenceFilter@236791e1, org.springframework.security.web.header.HeaderWriterFilter@5d52cc2a, org.springframework.security.web.authentication.logout.LogoutFilter@1b43ab75, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35b42c10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b4fe649, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@671ce3a1, org.springframework.security.web.session.SessionManagementFilter@209d9e53, org.springframework.security.web.access.ExceptionTranslationFilter@13b1dd11, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5829476f]
+[2022-07-21 21:56:29.195] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-21 21:56:29.201] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-21 21:56:29.201] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-21 21:56:29.203] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-21 21:56:29.203] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-21 21:56:29.203] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-21 21:56:29.203] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-21 21:56:29.203] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3f77c55a
+[2022-07-21 21:56:29.245] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-21 21:56:29.327] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-21 21:56:29.340] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-21 21:56:29.342] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-21 21:56:29.343] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-21 21:56:29.354] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.048 seconds (JVM running for 3.705)
+[2022-07-21 21:56:31.448] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-21 21:56:31.448] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-21 21:56:31.450] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 2 ms
+[2022-07-21 21:56:31.505] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-21 21:56:31.522] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-21 21:56:31.535] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
