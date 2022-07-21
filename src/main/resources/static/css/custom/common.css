@@ -159,6 +159,7 @@
 
 /* 메인(content) */
 .st-div-content-container {
+    width: 100%;
     padding-top: 50px;
 }
 

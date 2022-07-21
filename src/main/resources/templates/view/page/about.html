@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="ko">
+<th:block th:replace="view/layout/layout :: layout(~{this :: content}, ~{this :: title})">
+    <title th:fragment="title">spodnie-tribe</title>
+    <main th:fragment="content">
+        <div class="st-div-content-container">
+            <div style="height: 670px; text-align: center;">
+                본업에 지친 회사원들이 만든 바지입니다. 제발 사주세요
+            </div>
+        </div>
+    </main>
+</th:block>
+</html>
