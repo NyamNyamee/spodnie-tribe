@@ -84,3 +84,67 @@
 [2022-07-22 08:55:07.046] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
 [2022-07-22 08:55:07.061] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
 [2022-07-22 08:55:07.077] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:21.494] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:21.495] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:21.495] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:31.333] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 51176 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 08:57:31.332] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 08:57:31.335] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 08:57:31.335] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 08:57:31.378] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 08:57:31.379] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 08:57:32.872] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 08:57:32.880] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 08:57:32.880] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 08:57:32.881] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 08:57:32.978] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 08:57:32.979] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1600 ms
+[2022-07-22 08:57:33.029] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 08:57:33.123] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 08:57:33.132] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 08:57:33.481] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14ac6808, org.springframework.security.web.context.SecurityContextPersistenceFilter@5a98f659, org.springframework.security.web.header.HeaderWriterFilter@7148d19, org.springframework.security.web.authentication.logout.LogoutFilter@49de592c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2686546e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@26dd0203, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@30890916, org.springframework.security.web.session.SessionManagementFilter@3efd1a46, org.springframework.security.web.access.ExceptionTranslationFilter@24f3fcae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2e87449d]
+[2022-07-22 08:57:34.485] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 08:57:34.493] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 08:57:34.493] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 08:57:34.494] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 08:57:34.495] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 08:57:34.495] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 08:57:34.495] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 08:57:34.495] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@8fbda1c
+[2022-07-22 08:57:34.542] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 08:57:34.601] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 08:57:34.632] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 08:57:34.634] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 08:57:34.634] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 08:57:34.654] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.644 seconds (JVM running for 4.906)
+[2022-07-22 08:57:34.692] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 08:57:34.692] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 08:57:34.693] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+[2022-07-22 08:57:34.749] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:34.762] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:34.779] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:34.800] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:34.801] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:34.801] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:34.961] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:34.961] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:34.962] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:35.375] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:35.375] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:35.376] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:36.472] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:36.473] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:36.474] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:36.735] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:36.736] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:36.736] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 08:57:41.412] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 08:57:41.413] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 08:57:41.414] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
