@@ -40,7 +40,7 @@
 .st-nav-header-left-menu-container::before {
     box-shadow: 0 8px 32px 0 #00000040;
     border-radius: 10px;
-    background: #ffffff40;
+    background: #ffffffbf;
     backdrop-filter: blur(4px);
     border: 1px solid #ffffff2e;
     content: '';
@@ -162,6 +162,11 @@
 .st-div-content-container {
     width: 100%;
     padding-top: 50px;
+}
+
+.st-img-main-img {
+    width: 200px;
+    height: 400px;
 }
 
 /* 푸터 */
