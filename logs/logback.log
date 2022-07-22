@@ -148,3 +148,341 @@
 [2022-07-22 08:57:41.412] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
 [2022-07-22 08:57:41.413] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
 [2022-07-22 08:57:41.414] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 09:01:43.061] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:01:43.063] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 53356 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:01:43.064] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:01:43.064] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:01:43.102] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:01:43.102] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:01:44.690] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:01:44.698] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:01:44.699] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:01:44.699] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:01:44.800] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:01:44.801] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1698 ms
+[2022-07-22 09:01:44.869] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:01:44.988] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:01:45.000] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:01:45.370] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59ad603c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6249a5c8, org.springframework.security.web.header.HeaderWriterFilter@2b676ea1, org.springframework.security.web.authentication.logout.LogoutFilter@262babd7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5489e174, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1bf280ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d2d09bb, org.springframework.security.web.session.SessionManagementFilter@52783cae, org.springframework.security.web.access.ExceptionTranslationFilter@752d3d70, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5649f343]
+[2022-07-22 09:01:46.333] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:01:46.341] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:01:46.341] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:01:46.342] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:01:46.343] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:01:46.343] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:01:46.343] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:01:46.343] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@483a6ca1
+[2022-07-22 09:01:46.391] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:01:46.463] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:01:46.478] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:01:46.480] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:01:46.480] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:01:46.489] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.877 seconds (JVM running for 5.188)
+[2022-07-22 09:01:46.689] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:01:46.690] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:01:46.691] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+[2022-07-22 09:01:46.748] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 09:01:46.762] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 09:01:46.777] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 09:01:49.293] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 09:01:49.293] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 09:01:49.294] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 09:02:32.070] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 09:02:32.070] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 09:02:32.071] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 09:02:36.883] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 09:02:36.883] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 09:02:36.884] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 09:06:23.455] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 09:06:23.456] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 09:06:23.456] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 09:09:25.693] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:09:25.693] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 34952 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:09:25.695] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:09:25.696] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:09:25.730] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:09:25.730] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:09:27.096] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:09:27.106] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:09:27.107] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:09:27.107] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:09:27.207] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:09:27.207] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1477 ms
+[2022-07-22 09:09:27.232] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:09:27.376] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:09:27.386] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:09:27.765] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77478123, org.springframework.security.web.context.SecurityContextPersistenceFilter@109a1e45, org.springframework.security.web.header.HeaderWriterFilter@4a238495, org.springframework.security.web.authentication.logout.LogoutFilter@5e3691c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2acd2d15, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73717d5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55e0d49d, org.springframework.security.web.session.SessionManagementFilter@c031be, org.springframework.security.web.access.ExceptionTranslationFilter@3c2eca8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24dc05a8]
+[2022-07-22 09:09:28.786] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:09:28.794] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:09:28.795] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:09:28.795] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:09:28.796] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:09:28.796] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:09:28.796] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:09:28.796] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6daeb79b
+[2022-07-22 09:09:28.843] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:09:28.901] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:09:28.922] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:09:28.923] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:09:28.923] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:09:28.931] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.588 seconds (JVM running for 5.668)
+[2022-07-22 09:09:39.817] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:09:39.818] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:09:39.819] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+[2022-07-22 09:09:39.879] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==>  Preparing: SELECT * FROM ST_PRODUCT_INFO AS SPI WHERE 1 = 1;
+[2022-07-22 09:09:39.892] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - ==> Parameters: 
+[2022-07-22 09:09:39.908] DEBUG c.p.st.dao.ProductDAO.getProducts:137 - <==      Total: 2
+[2022-07-22 09:14:30.977] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 53024 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:14:30.981] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:14:30.981] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:14:30.990] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:14:31.050] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:14:31.051] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:14:32.301] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:14:32.310] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:14:32.311] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:14:32.311] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:14:32.405] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:14:32.405] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1354 ms
+[2022-07-22 09:14:32.457] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:14:32.567] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:14:32.577] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:14:32.948] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c8529ce, org.springframework.security.web.context.SecurityContextPersistenceFilter@25d3e8b1, org.springframework.security.web.header.HeaderWriterFilter@76b33962, org.springframework.security.web.authentication.logout.LogoutFilter@31c9f5c2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30d1e793, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@130d7d69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77bc9e7d, org.springframework.security.web.session.SessionManagementFilter@323b85bb, org.springframework.security.web.access.ExceptionTranslationFilter@6966fc61, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5f71f00a]
+[2022-07-22 09:14:33.901] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:14:33.910] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:14:33.910] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:14:33.911] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:14:33.912] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:14:33.912] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:14:33.912] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:14:33.912] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@77a3ee42
+[2022-07-22 09:14:33.960] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:14:34.018] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:14:34.040] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:14:34.042] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:14:34.042] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:14:34.050] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.569 seconds (JVM running for 4.79)
+[2022-07-22 09:15:28.825] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:15:28.826] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:15:28.827] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+[2022-07-22 09:16:21.882] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:16:21.885] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 41244 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:16:21.886] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:16:21.886] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:16:21.921] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:16:21.922] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:16:23.190] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:16:23.198] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:16:23.198] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:16:23.199] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:16:23.294] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:16:23.294] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1372 ms
+[2022-07-22 09:16:23.346] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:16:23.434] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:16:23.442] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:16:23.787] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e84d6d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@c031be, org.springframework.security.web.header.HeaderWriterFilter@2ef5f4e3, org.springframework.security.web.authentication.logout.LogoutFilter@16a019c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@109a1e45, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71fc917b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@698e4a6a, org.springframework.security.web.session.SessionManagementFilter@10defe5f, org.springframework.security.web.access.ExceptionTranslationFilter@72cf3ef9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2bbbc99b]
+[2022-07-22 09:16:24.709] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:16:24.717] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:16:24.717] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:16:24.718] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:16:24.719] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:16:24.719] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:16:24.719] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:16:24.719] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@14a71394
+[2022-07-22 09:16:24.766] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:16:24.823] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:16:24.837] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:16:24.838] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:16:24.838] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:16:24.846] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.365 seconds (JVM running for 4.478)
+[2022-07-22 09:16:28.632] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:16:28.632] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:16:28.633] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+[2022-07-22 09:17:05.137] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:17:05.140] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 2768 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:17:05.141] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:17:05.141] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:17:05.176] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:17:05.176] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:17:06.333] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:17:06.342] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:17:06.342] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:17:06.343] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:17:06.465] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:17:06.466] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1289 ms
+[2022-07-22 09:17:06.490] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:17:06.605] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:17:06.615] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:17:07.098] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@143e2cb9, org.springframework.security.web.context.SecurityContextPersistenceFilter@1e5d2330, org.springframework.security.web.header.HeaderWriterFilter@f7d5a4e, org.springframework.security.web.authentication.logout.LogoutFilter@6c3a77d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6438262d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@923d7e7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c262d50, org.springframework.security.web.session.SessionManagementFilter@2cf9cf66, org.springframework.security.web.access.ExceptionTranslationFilter@3a6c8031, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f592771]
+[2022-07-22 09:17:08.064] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:17:08.072] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:17:08.072] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:17:08.073] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:17:08.073] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:17:08.074] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:17:08.074] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:17:08.074] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@fcc3dde
+[2022-07-22 09:17:08.122] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:17:08.181] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:17:08.200] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:17:08.201] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:17:08.201] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:17:08.210] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.42 seconds (JVM running for 5.157)
+[2022-07-22 09:17:23.398] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:17:23.398] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:17:23.399] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 0 ms
+[2022-07-22 09:21:27.085] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 50944 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:21:27.084] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:21:27.086] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:21:27.087] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:21:27.127] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:21:27.127] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:21:28.228] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:21:28.235] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:21:28.236] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:21:28.236] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:21:28.324] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:21:28.324] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1196 ms
+[2022-07-22 09:21:28.382] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:21:28.467] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:21:28.475] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:21:28.821] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a3db391, org.springframework.security.web.context.SecurityContextPersistenceFilter@6b63467f, org.springframework.security.web.header.HeaderWriterFilter@7fef2c4, org.springframework.security.web.authentication.logout.LogoutFilter@713c8666, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@46b7d8d9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48f753c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d1f8079, org.springframework.security.web.session.SessionManagementFilter@3a918d45, org.springframework.security.web.access.ExceptionTranslationFilter@60b2f629, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5945b624]
+[2022-07-22 09:21:29.815] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:21:29.825] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:21:29.825] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:21:29.826] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:21:29.827] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:21:29.827] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:21:29.827] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:21:29.827] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@19671a6f
+[2022-07-22 09:21:29.887] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:21:29.945] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:21:29.959] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:21:29.961] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:21:29.961] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:21:29.969] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.214 seconds (JVM running for 4.778)
+[2022-07-22 09:21:33.126] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:21:33.127] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:21:33.128] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
+[2022-07-22 09:22:36.477] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:22:36.479] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 51300 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:22:36.480] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:22:36.480] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:22:36.513] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:22:36.514] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:22:37.601] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:22:37.608] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:22:37.609] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:22:37.609] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:22:37.708] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:22:37.708] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1194 ms
+[2022-07-22 09:22:37.758] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:22:37.845] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:22:37.853] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:22:38.200] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3688e8f0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2686546e, org.springframework.security.web.header.HeaderWriterFilter@e0add6a, org.springframework.security.web.authentication.logout.LogoutFilter@574c775c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dd07d67, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3aedba13, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b18fe66, org.springframework.security.web.session.SessionManagementFilter@5a98f659, org.springframework.security.web.access.ExceptionTranslationFilter@db7526a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@455998ac]
+[2022-07-22 09:22:39.153] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:22:39.161] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:22:39.161] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:22:39.162] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:22:39.163] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:22:39.163] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:22:39.163] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:22:39.164] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1301d47c
+[2022-07-22 09:22:39.210] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:22:39.267] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:22:39.280] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:22:39.282] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:22:39.282] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:22:39.290] INFO  com.poland.st.StApplication:61 - Started StApplication in 3.132 seconds (JVM running for 5.427)
+[2022-07-22 09:22:53.693] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:22:53.693] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:22:53.694] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 0 ms
+[2022-07-22 09:32:10.351] INFO  o.h.validator.internal.util.Version:21 - HV000001: Hibernate Validator 6.2.3.Final
+[2022-07-22 09:32:10.410] INFO  com.poland.st.StApplication:55 - Starting StApplication using Java 1.8.0_261 on kspark-real-iv with PID 34400 (C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe\build\classes\java\main started by user in C:\Users\user\Desktop\inwoo\IJWorkspace\spodnie-tribe)
+[2022-07-22 09:32:10.412] DEBUG com.poland.st.StApplication:56 - Running with Spring Boot v2.6.8, Spring v5.3.20
+[2022-07-22 09:32:10.413] INFO  com.poland.st.StApplication:651 - The following 1 profile is active: "local"
+[2022-07-22 09:32:10.550] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-07-22 09:32:10.550] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-07-22 09:32:12.002] INFO  o.s.b.w.e.tomcat.TomcatWebServer:108 - Tomcat initialized with port(s): 8080 (http)
+[2022-07-22 09:32:12.010] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Initializing ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:32:12.011] INFO  o.a.catalina.core.StandardService:173 - Starting service [Tomcat]
+[2022-07-22 09:32:12.012] INFO  o.a.catalina.core.StandardEngine:173 - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[2022-07-22 09:32:12.159] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring embedded WebApplicationContext
+[2022-07-22 09:32:12.159] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext:290 - Root WebApplicationContext: initialization completed in 1608 ms
+[2022-07-22 09:32:12.183] INFO  com.zaxxer.hikari.HikariDataSource:110 - HikariPool-1 - Starting...
+[2022-07-22 09:32:12.296] INFO  com.zaxxer.hikari.HikariDataSource:123 - HikariPool-1 - Start completed.
+[2022-07-22 09:32:12.305] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration:89 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+[2022-07-22 09:32:12.734] INFO  o.s.s.web.DefaultSecurityFilterChain:55 - Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3bc2a4db, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e33d5c1, org.springframework.security.web.header.HeaderWriterFilter@3e16df2d, org.springframework.security.web.authentication.logout.LogoutFilter@6ecdc00, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cf79c08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74a06982, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@18ffecbe, org.springframework.security.web.session.SessionManagementFilter@29bdb79f, org.springframework.security.web.access.ExceptionTranslationFilter@588fc24d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@341f4ad5]
+[2022-07-22 09:32:13.758] INFO  org.quartz.impl.StdSchedulerFactory:1220 - Using default implementation for ThreadExecutor
+[2022-07-22 09:32:13.767] INFO  o.quartz.core.SchedulerSignalerImpl:61 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2022-07-22 09:32:13.767] INFO  org.quartz.core.QuartzScheduler:229 - Quartz Scheduler v.2.3.2 created.
+[2022-07-22 09:32:13.768] INFO  org.quartz.simpl.RAMJobStore:155 - RAMJobStore initialized.
+[2022-07-22 09:32:13.769] INFO  org.quartz.core.QuartzScheduler:294 - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2022-07-22 09:32:13.769] INFO  org.quartz.impl.StdSchedulerFactory:1374 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2022-07-22 09:32:13.769] INFO  org.quartz.impl.StdSchedulerFactory:1378 - Quartz scheduler version: 2.3.2
+[2022-07-22 09:32:13.769] INFO  org.quartz.core.QuartzScheduler:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@47a2ef3a
+[2022-07-22 09:32:13.816] INFO  o.s.b.d.a.OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+[2022-07-22 09:32:13.900] INFO  o.a.coyote.http11.Http11NioProtocol:173 - Starting ProtocolHandler ["http-nio-8080"]
+[2022-07-22 09:32:13.920] INFO  o.s.b.w.e.tomcat.TomcatWebServer:220 - Tomcat started on port(s): 8080 (http) with context path ''
+[2022-07-22 09:32:13.921] INFO  o.s.s.quartz.SchedulerFactoryBean:729 - Starting Quartz Scheduler now
+[2022-07-22 09:32:13.922] INFO  org.quartz.core.QuartzScheduler:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2022-07-22 09:32:13.930] INFO  com.poland.st.StApplication:61 - Started StApplication in 4.111 seconds (JVM running for 5.412)
+[2022-07-22 09:32:14.131] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-07-22 09:32:14.132] INFO  o.s.web.servlet.DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+[2022-07-22 09:32:14.133] INFO  o.s.web.servlet.DispatcherServlet:547 - Completed initialization in 1 ms
