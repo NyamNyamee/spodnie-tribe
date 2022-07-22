@@ -164,6 +164,11 @@
     padding-top: 50px;
 }
 
+.st-img-main-img {
+    width: 200px;
+    height: 400px;
+}
+
 /* 푸터 */
 .st-div-footer {
     width: 100%;
