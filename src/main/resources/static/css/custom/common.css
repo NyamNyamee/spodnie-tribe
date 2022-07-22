@@ -110,7 +110,7 @@
 }
 
 .nav-menu-open .div-li-header-left-menu:nth-child(5) {
-    transition-delay: 1s;
+    transition-delay: 3s;
 }
 
 .nav-menu-open .div-li-header-left-menu:nth-child(6) {
@@ -122,7 +122,7 @@
 }
 
 .nav-menu-open .div-li-header-left-menu:nth-child(9) {
-    transition-delay: 1.6s;
+    transition-delay: 3s;
 }
 
 .st-span-hamburger-bars::before,
