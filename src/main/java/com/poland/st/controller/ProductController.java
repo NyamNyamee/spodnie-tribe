@@ -14,12 +14,12 @@ import java.util.List;
 @Slf4j
 @RequiredArgsConstructor
 @Controller
-@RequestMapping("")
+@RequestMapping("/product")
 public class ProductController {
     private final ProductService productService;
 
-    @GetMapping("")
-    public String getProductList(Model model) {
+    @GetMapping("/pants")
+    public String getPantsList(Model model) {
         try {
             List<ProductDTO> products = productService.getProducts();
             model.addAttribute("products", products);
@@ -27,6 +27,6 @@ public class ProductController {
             log.error(e.toString());
         }
 
-        return "view/page/main";
+        return "view/page/product/pants";
     }
 }
