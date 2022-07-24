@@ -12,22 +12,22 @@
                     <li class="div-li-header-left-menu"><a class="text-decoration-none" th:href="@{/about}">About</a></li>
                     <li class="div-li-header-left-menu"><a class="text-decoration-none" th:href="@{/contact}">Contact</a></li>
                     <li class="div-li-header-left-menu"><a class="text-decoration-none" th:href="@{/notice}">Notice</a></li>
-                    <li class="div-li-header-left-menu"><a class="text-decoration-none" th:href="@{/shop}">Shop</a></li>
+                    <li class="div-li-header-left-menu"><a class="text-decoration-none" th:href="@{/gallery}">Gallery</a></li>
                     <li class="nav-item dropdown div-li-header-left-menu">
                         <div class="dropdown">
                             <a role="button" class="dropdown-toggle text-decoration-none" id="st-a-shop-dropdown"
                                data-bs-toggle="dropdown" aria-expanded="false">Shop
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="st-a-shop-dropdown">
-                                <li><a class="dropdown-item" href="#">All</a></li>
-                                <li><a class="dropdown-item" href="#">Pants</a></li>
+                                <li><a class="dropdown-item st-li-dropdown-menu" th:href="@{/product/list}">All</a></li>
+                                <li><a class="dropdown-item st-li-dropdown-menu" th:href="@{/product/list?category=1}">Pants</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </nav>
         </span>
-        <span class="st-span-header-center"><a class="text-decoration-none" style="color: black; letter-spacing: 30px;" th:href="@{/}">SPODNIE TRIBE</a></span>
+        <span class="st-span-header-center"><a class="text-decoration-none" style="font-weight: bold; color: black; letter-spacing: 30px;" th:href="@{/}">SPODNIE TRIBE</a></span>
         <span class="st-span-header-right">로그인 등</span>
     </div>
 </header>

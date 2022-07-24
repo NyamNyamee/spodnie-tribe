@@ -30,8 +30,8 @@ public class CommonController {
         return "view/page/common/notice";
     }
 
-    @GetMapping("/shop")
-    public String getShop(Model model) {
-        return "view/page/common/shop";
+    @GetMapping("/gallery")
+    public String getGallery(Model model) {
+        return "view/page/common/gallery";
     }
 }

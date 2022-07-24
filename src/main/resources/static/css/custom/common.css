@@ -151,6 +151,23 @@
     transition: opacity 0.5s 0.5s;
 }
 
+.div-li-header-left-menu .dropdown .dropdown-menu {
+    border: none;
+    list-style: disc;
+    background: none;
+    padding: 0 0 0 10px;
+    font-size: 14px;
+}
+
+.st-li-dropdown-menu {
+    padding: 0px;
+}
+
+.st-li-dropdown-menu:hover {
+    color: #555;
+    background: none;
+}
+
 .st-span-header-center {
 }
 

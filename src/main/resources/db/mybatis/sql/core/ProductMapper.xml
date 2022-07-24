@@ -2,13 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.poland.st.dao.ProductDAO">
-    <select id="getProducts" parameterType="java.lang.String" resultType="com.poland.st.dto.ProductDTO">
+    <select id="getProducts" parameterType="com.poland.st.dto.SearchConditionDTO" resultType="com.poland.st.dto.ProductDTO">
         SELECT
             *
         FROM
             ST_PRODUCT_INFO AS SPI
         WHERE
-            1 = 1;
+            1 = 1
+            <if test="category != null">
+                AND CATEGORY = #{category}
+            </if>
+            ;
     </select>
 
     <select id="selectMacroLastSeqNum" parameterType="java.util.HashMap" resultType="String">
