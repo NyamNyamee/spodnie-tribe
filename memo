@@ -2,3 +2,4 @@
 2. 스프링 시큐리티 기본 로그인화면 제거 -> Config에서 configure메서드에 설정
 3. H2 db 설정 -> application.yml 파일에서 설정
 4. H2 db /h2-console 연결 안될때 -> 루트유저경로 아래 test.mv.db 파일 생성
+5. 맥 자동완성 안될때 -> preferences-keymap-code-code completion-basic 확인, 맥 시스템 환경설정 키보드-단축키-입력소스에서 이전입력소스 체크해제

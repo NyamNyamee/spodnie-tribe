@@ -47,19 +47,25 @@ spring:
       on-profile: local
 
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:test
-    username: sa
-    password:
+    url: jdbc:mysql://localhost:3306/poland?serverTimezone=Asia/Seoul&useUniCode=yes&characterEncoding=UTF-8
+    username: root
+    password: dlsndlxm94
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
-  h2:
-    console:
-      enabled: true
+#  datasource:
+#    driver-class-name: org.h2.Driver
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
 
-  sql:
-    init:
-      schema-locations: classpath*:db/h2/init.sql
-      mode: always
+#  h2:
+#    console:
+#      enabled: true
+#
+#  sql:
+#    init:
+#      schema-locations: classpath*:db/h2/init.sql
+#      mode: always
 
 #  db:
 #    datasource:
