@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
+
 @Slf4j
 @RequiredArgsConstructor
 @Controller
@@ -24,6 +25,7 @@ public class ProductController {
     public String getProducts(@ModelAttribute SearchConditionDTO searchConditionDTO, Model model) {
         try {
             List<ProductDTO> products = productService.getProducts(searchConditionDTO);
+
             model.addAttribute("products", products);
         } catch (Exception e) {
             log.error(e.toString());

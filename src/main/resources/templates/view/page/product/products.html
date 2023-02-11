@@ -3,15 +3,28 @@
     <title th:fragment="title">spodnie-tribe</title>
     <main th:fragment="content">
         <div class="st-div-content-container">
-<!--            <div style="width: 100%; height: 817px; background: url('asset/image/asphalt-01.png') center no-repeat; background-size: contain;">-->
-<!--                <div style="width: 100%; height: 50%;">-->
-<!--&lt;!&ndash;                    <img src="asset/image/test.png" th:src="@{asset/image/test.png}" alt="액박" class="st-img-main-img">&ndash;&gt;-->
-<!--&lt;!&ndash;                    <img src="asset/image/test.png" th:src="@{asset/image/test.png}" alt="액박" class="st-img-main-img">&ndash;&gt;-->
-<!--                </div>-->
-<!--            </div>-->
-            <div th:each="product : ${products}" th:text="${product.name}">
+            <!--            <div style="width: 100%; height: 817px; background: url('asset/image/asphalt-01.png') center no-repeat; background-size: contain;">-->
+            <!--                <div style="width: 100%; height: 50%;">-->
+            <!--&lt;!&ndash;                    <img src="asset/image/test.png" th:src="@{asset/image/test.png}" alt="액박" class="st-img-main-img">&ndash;&gt;-->
+            <!--&lt;!&ndash;                    <img src="asset/image/test.png" th:src="@{asset/image/test.png}" alt="액박" class="st-img-main-img">&ndash;&gt;-->
+            <!--                </div>-->
+            <!--            </div>-->
 
-            </div>
+            <!-- 상품테이블 -->
+            <table style="margin: auto;">
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr th:each="product : ${products}">
+                    <td th:text="${product.name}">상품명</td>
+                    <td th:text="${product.category}">카테고리</td>
+                    <td th:text="${product.price}">가격</td>
+                    <td th:text="${product.quantity}">재고</td>
+                </tr>
+            </table>
 
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
