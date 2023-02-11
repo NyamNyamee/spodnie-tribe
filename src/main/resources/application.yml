@@ -40,7 +40,7 @@ custom:
   reply-queue: queue.macro.reply  # 응답 큐
 
 ---
-##### 로컬 #####
+##### local #####
 spring:
   config:
     activate:
@@ -80,26 +80,25 @@ custom:
     path: C:/tmp/
 
 ---
-##### 개발 #####
+##### dev #####
 spring:
   config:
     activate:
       on-profile: dev
 
-  db:
-    datasource:
-      jdbc-url:
-      username:
-      password:
-      driver-class-name: com.mysql.jdbc.Driver
+  datasource:
+    url:
+    username:
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
 
 # 파일 업로드 경로
 custom:
   file:
-    path: /home/rp/upload
+    path: /src/resources/static/asset/temp/
 
 ---
-##### 상용 #####
+##### prod #####
 spring:
   config:
     activate:
