@@ -21,7 +21,7 @@ import java.util.List;
 public class ProductController {
     private final ProductService productService;
 
-    @GetMapping("/list")
+    @GetMapping("")
     public String getProducts(@ModelAttribute SearchConditionDTO searchConditionDTO, Model model) {
         try {
             List<ProductDTO> products = productService.getProducts(searchConditionDTO);
