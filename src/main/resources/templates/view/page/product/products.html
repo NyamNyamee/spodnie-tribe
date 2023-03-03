@@ -11,20 +11,27 @@
             <!--            </div>-->
 
             <!-- 상품테이블 -->
-            <table style="margin: auto; border: 1px solid #505050">
-                <tr>
-                    <th>Name</th>
-                    <th>Category</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                </tr>
-                <tr th:each="product : ${products}">
-                    <td th:text="${product.name}">상품명</td>
-                    <td th:text="${product.category}">카테고리</td>
-                    <td th:text="${product.price}">가격</td>
-                    <td th:text="${product.quantity}">재고</td>
-                </tr>
-            </table>
+            <div style="display:flex;">
+                <div class="st-list-product-container" th:each="product : ${products}">
+                    <img src="asset/image/test.png" th:src="@{asset/image/test.png}" alt="액박" class="st-img-main-img">
+                    <div class="st-list-product-name" th:text="${product.name}"></div>
+                    <div class="st-list-product-price" th:text="${product.price}"></div>
+                </div>
+            </div>
+<!--            <table style="margin: auto; border: 1px solid #505050">-->
+<!--                <tr>-->
+<!--                    <th>Name</th>-->
+<!--                    <th>Category</th>-->
+<!--                    <th>Price</th>-->
+<!--                    <th>Quantity</th>-->
+<!--                </tr>-->
+<!--                <tr th:each="product : ${products}">-->
+<!--                    <td th:text="${product.name}">상품명</td>-->
+<!--                    <td th:text="${product.category}">카테고리</td>-->
+<!--                    <td th:text="${product.price}">가격</td>-->
+<!--                    <td th:text="${product.quantity}">재고</td>-->
+<!--                </tr>-->
+<!--            </table>-->
 
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>

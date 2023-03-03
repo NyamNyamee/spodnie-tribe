@@ -187,6 +187,21 @@
     height: 400px;
 }
 
+.st-list-product-container {
+    justify-content: normal;
+    margin-right: 110px;
+}
+
+.st-list-product-name {
+    text-align: center;
+}
+
+.st-list-product-price {
+    text-align: center;
+    font-weight: lighter;
+}
+
+
 /* 푸터 */
 .st-div-footer {
     width: 100%;
